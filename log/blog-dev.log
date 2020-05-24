@@ -1,0 +1,482 @@
+2020-05-23 10:44:52.178  INFO 27180 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 27180 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 10:44:52.185 DEBUG 27180 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 10:44:52.186  INFO 27180 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 10:44:53.230  INFO 27180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 10:44:53.308  INFO 27180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 4 repository interfaces.
+2020-05-23 10:44:53.646  INFO 27180 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fdecd722] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 10:44:54.034  INFO 27180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 10:44:54.053  INFO 27180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 10:44:54.053  INFO 27180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 10:44:54.145  INFO 27180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 10:44:54.145  INFO 27180 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1830 ms
+2020-05-23 10:44:54.317  INFO 27180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 10:44:54.491  INFO 27180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 10:44:54.534  INFO 27180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 10:44:54.603  INFO 27180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 10:44:54.604  INFO 27180 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 10:44:54.755  INFO 27180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 10:44:54.952  INFO 27180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 10:44:55.778  INFO 27180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 10:44:56.493  INFO 27180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 10:44:56.618  WARN 27180 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 10:44:56.654  INFO 27180 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 10:44:56.790  INFO 27180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 10:44:56.792  INFO 27180 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 5.175 seconds (JVM running for 6.058)
+2020-05-23 10:45:12.213  INFO 27180 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 10:45:12.213  INFO 27180 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 10:45:12.228  INFO 27180 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-05-23 10:45:12.257  INFO 27180 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@283fd028'}
+2020-05-23 10:45:12.260  INFO 27180 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 10:45:18.513  INFO 27180 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@55e9017'}
+2020-05-23 10:45:18.537  INFO 27180 --- [http-nio-8081-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 10:45:18.654  INFO 27180 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 10:45:20.298  INFO 27180 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs;jsessionid=20DE22167F3C79A9C4D94F2A6CCE7593', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@ad5a268'}
+2020-05-23 10:45:20.344  INFO 27180 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 10:45:41.469  INFO 27180 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/search', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.search', args='[Ljava.lang.Object;@5655c2d3'}
+2020-05-23 10:45:41.477  INFO 27180 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/blogs :: blogList
+2020-05-23 10:45:51.328  INFO 27180 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.input', args='[Ljava.lang.Object;@468683a1'}
+2020-05-23 10:45:51.339  INFO 27180 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 10:45:52.547  INFO 27180 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@18af1fdf'}
+2020-05-23 10:45:52.558  INFO 27180 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 10:45:53.907  INFO 27180 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : request:{url='/admin/types', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TypeController.types', args='[Ljava.lang.Object;@3f8434e7'}
+2020-05-23 10:45:53.929  INFO 27180 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : Result:admin/types
+2020-05-23 10:45:55.579  INFO 27180 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/types/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TypeController.input', args='[Ljava.lang.Object;@38356b6c'}
+2020-05-23 10:45:55.579  INFO 27180 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/types-input
+2020-05-23 10:45:57.972  INFO 27180 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/tags', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TagController.tags', args='[Ljava.lang.Object;@2387894d'}
+2020-05-23 10:45:57.982  INFO 27180 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:admin/tags
+2020-05-23 10:45:59.767  INFO 27180 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : request:{url='/admin/tags/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TagController.input', args='[Ljava.lang.Object;@19cd952f'}
+2020-05-23 10:45:59.767  INFO 27180 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : Result:admin/tags-input
+2020-05-23 10:46:00.655  INFO 27180 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : request:{url='/admin/tags', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TagController.tags', args='[Ljava.lang.Object;@4f08ce9b'}
+2020-05-23 10:46:00.657  INFO 27180 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : Result:admin/tags
+2020-05-23 11:07:18.693  INFO 27180 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/types', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TypeController.types', args='[Ljava.lang.Object;@58ff2d83'}
+2020-05-23 11:07:18.698  INFO 27180 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/types
+2020-05-23 11:07:19.408  INFO 27180 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@5a8f8684'}
+2020-05-23 11:07:19.419  INFO 27180 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 11:07:28.404  INFO 27180 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.input', args='[Ljava.lang.Object;@4859ed0d'}
+2020-05-23 11:07:28.410  INFO 27180 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 11:15:19.797  INFO 23984 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 23984 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 11:15:19.799 DEBUG 23984 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 11:15:19.799  INFO 23984 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 11:15:20.624  INFO 23984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 11:15:20.705  INFO 23984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 4 repository interfaces.
+2020-05-23 11:15:21.014  INFO 23984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4224fa7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 11:15:21.559  INFO 23984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 11:15:21.588  INFO 23984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 11:15:21.588  INFO 23984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 11:15:21.703  INFO 23984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 11:15:21.703  INFO 23984 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1863 ms
+2020-05-23 11:15:21.874  INFO 23984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 11:15:22.055  INFO 23984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 11:15:22.099  INFO 23984 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 11:15:22.164  INFO 23984 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 11:15:22.166  INFO 23984 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 11:15:22.284  INFO 23984 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 11:15:22.421  INFO 23984 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 11:15:23.200  INFO 23984 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 11:15:23.932  INFO 23984 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 11:15:24.055  WARN 23984 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 11:15:24.085  INFO 23984 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 11:15:24.231  INFO 23984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 11:15:24.233  INFO 23984 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 4.785 seconds (JVM running for 5.527)
+2020-05-23 11:15:24.492  INFO 23984 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 11:15:24.492  INFO 23984 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 11:15:24.504  INFO 23984 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-05-23 11:15:24.537  INFO 23984 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@3a946b97'}
+2020-05-23 11:15:24.540  INFO 23984 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 11:15:27.601  INFO 23984 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@46f7d944'}
+2020-05-23 11:15:27.618  INFO 23984 --- [http-nio-8081-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 11:15:27.705  INFO 23984 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 11:15:29.506  INFO 23984 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@6fb4b1fb'}
+2020-05-23 11:15:29.545  INFO 23984 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 11:15:31.813  INFO 23984 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.input', args='[Ljava.lang.Object;@65f22fec'}
+2020-05-23 11:15:31.822  INFO 23984 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 15:29:36.271  INFO 21728 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 21728 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 15:29:36.276 DEBUG 21728 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 15:29:36.276  INFO 21728 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 15:29:37.246  INFO 21728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 15:29:37.332  INFO 21728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78ms. Found 4 repository interfaces.
+2020-05-23 15:29:37.659  INFO 21728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8a54e1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 15:29:38.053  INFO 21728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 15:29:38.074  INFO 21728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 15:29:38.075  INFO 21728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 15:29:38.185  INFO 21728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 15:29:38.186  INFO 21728 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1858 ms
+2020-05-23 15:29:38.355  INFO 21728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 15:29:38.529  INFO 21728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 15:29:38.572  INFO 21728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 15:29:38.626  INFO 21728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 15:29:38.627  INFO 21728 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 15:29:38.738  INFO 21728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 15:29:38.916  INFO 21728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 15:29:40.004  INFO 21728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 15:29:40.797  INFO 21728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 15:29:40.924  WARN 21728 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 15:29:40.953  INFO 21728 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 15:29:41.107  INFO 21728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 15:29:41.109  INFO 21728 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 5.401 seconds (JVM running for 6.509)
+2020-05-23 15:29:50.318  INFO 21728 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 15:29:50.319  INFO 21728 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 15:29:50.333  INFO 21728 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-05-23 15:29:50.371  INFO 21728 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@2f6f03d3'}
+2020-05-23 15:29:50.374  INFO 21728 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 15:29:52.993  INFO 21728 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@7439e4dd'}
+2020-05-23 15:29:53.014  INFO 21728 --- [http-nio-8081-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 15:29:53.127  INFO 21728 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 15:29:55.183  INFO 21728 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@3a8bb4aa'}
+2020-05-23 15:29:55.224  INFO 21728 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 15:29:57.371  INFO 21728 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.input', args='[Ljava.lang.Object;@7717e406'}
+2020-05-23 15:29:57.379  INFO 21728 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:06:51.866  INFO 9432 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 9432 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 16:06:51.870 DEBUG 9432 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 16:06:51.871  INFO 9432 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 16:06:53.079  INFO 9432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 16:06:53.170  INFO 9432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83ms. Found 4 repository interfaces.
+2020-05-23 16:06:53.533  INFO 9432 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5ec1ecb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 16:06:53.967  INFO 9432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 16:06:53.989  INFO 9432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 16:06:53.990  INFO 9432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 16:06:54.097  INFO 9432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 16:06:54.098  INFO 9432 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2155 ms
+2020-05-23 16:06:54.268  INFO 9432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 16:06:54.450  INFO 9432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 16:06:54.498  INFO 9432 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 16:06:54.558  INFO 9432 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 16:06:54.560  INFO 9432 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 16:06:54.681  INFO 9432 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 16:06:54.831  INFO 9432 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 16:06:55.735  INFO 9432 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:06:56.693  INFO 9432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:06:56.856  WARN 9432 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 16:06:56.897  INFO 9432 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 16:06:57.107  INFO 9432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 16:06:57.110  INFO 9432 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 5.855 seconds (JVM running for 7.136)
+2020-05-23 16:07:20.151  INFO 9432 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 16:07:20.152  INFO 9432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 16:07:20.165  INFO 9432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-05-23 16:07:20.201  INFO 9432 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@2f6f03d3'}
+2020-05-23 16:07:20.207  INFO 9432 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 16:07:23.740  INFO 9432 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@54b185e3'}
+2020-05-23 16:07:23.760  INFO 9432 --- [http-nio-8081-exec-8] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 16:07:23.862  INFO 9432 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 16:07:25.398  INFO 9432 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@1aa4d90d'}
+2020-05-23 16:07:25.447  INFO 9432 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:08:03.393  INFO 9432 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.input', args='[Ljava.lang.Object;@227849e7'}
+2020-05-23 16:08:03.405  INFO 9432 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:08:25.240  INFO 9432 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.saveBlogs', args='[Ljava.lang.Object;@656d505d'}
+2020-05-23 16:08:25.295  INFO 9432 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : Result:redirect:/admin/blogs
+2020-05-23 16:08:25.308  INFO 9432 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@4e73c037'}
+2020-05-23 16:08:25.321  INFO 9432 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:09:15.301  INFO 19276 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 19276 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 16:09:15.304 DEBUG 19276 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 16:09:15.304  INFO 19276 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 16:09:16.288  INFO 19276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 16:09:16.380  INFO 19276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 4 repository interfaces.
+2020-05-23 16:09:16.760  INFO 19276 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dcb64ab4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 16:09:17.232  INFO 19276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 16:09:17.254  INFO 19276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 16:09:17.254  INFO 19276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 16:09:17.357  INFO 19276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 16:09:17.357  INFO 19276 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1999 ms
+2020-05-23 16:09:17.505  INFO 19276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 16:09:17.664  INFO 19276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 16:09:17.704  INFO 19276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 16:09:17.756  INFO 19276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 16:09:17.757  INFO 19276 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 16:09:17.866  INFO 19276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 16:09:17.992  INFO 19276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 16:09:18.738  INFO 19276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:09:19.563  INFO 19276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:09:19.688  WARN 19276 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 16:09:19.719  INFO 19276 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 16:09:19.864  INFO 19276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 16:09:19.865  INFO 19276 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 5.066 seconds (JVM running for 6.03)
+2020-05-23 16:09:33.843  INFO 16032 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 16032 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 16:09:33.846 DEBUG 16032 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 16:09:33.846  INFO 16032 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 16:09:34.901  INFO 16032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 16:09:34.991  INFO 16032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75ms. Found 4 repository interfaces.
+2020-05-23 16:09:35.339  INFO 16032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94113f8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 16:09:35.760  INFO 16032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 16:09:35.780  INFO 16032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 16:09:35.780  INFO 16032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 16:09:35.879  INFO 16032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 16:09:35.879  INFO 16032 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1979 ms
+2020-05-23 16:09:36.030  INFO 16032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 16:09:36.211  INFO 16032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 16:09:36.253  INFO 16032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 16:09:36.307  INFO 16032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 16:09:36.309  INFO 16032 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 16:09:36.416  INFO 16032 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 16:09:36.544  INFO 16032 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 16:09:37.352  INFO 16032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:09:38.104  INFO 16032 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:09:38.233  WARN 16032 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 16:09:38.267  INFO 16032 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 16:09:38.467  INFO 16032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 16:09:38.470  INFO 16032 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 5.198 seconds (JVM running for 6.155)
+2020-05-23 16:09:39.361  INFO 16032 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 16:09:39.361  INFO 16032 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 16:09:39.374  INFO 16032 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-05-23 16:09:39.409  INFO 16032 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@3a946b97'}
+2020-05-23 16:09:39.412  INFO 16032 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 16:09:41.589  INFO 16032 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@569e6d4d'}
+2020-05-23 16:09:41.607  INFO 16032 --- [http-nio-8081-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 16:09:41.697  INFO 16032 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 16:09:43.061  INFO 16032 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@7db61e10'}
+2020-05-23 16:09:43.104  INFO 16032 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:10:42.462  INFO 27128 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 27128 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 16:10:42.467 DEBUG 27128 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 16:10:42.467  INFO 27128 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 16:10:44.278  INFO 27128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 16:10:44.427  INFO 27128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132ms. Found 4 repository interfaces.
+2020-05-23 16:10:45.077  INFO 27128 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a3e9a3cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 16:10:45.714  INFO 27128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 16:10:45.753  INFO 27128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 16:10:45.753  INFO 27128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 16:10:45.908  INFO 27128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 16:10:45.909  INFO 27128 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3365 ms
+2020-05-23 16:10:46.167  INFO 27128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 16:10:46.440  INFO 27128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 16:10:46.503  INFO 27128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 16:10:46.589  INFO 27128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 16:10:46.591  INFO 27128 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 16:10:46.746  INFO 27128 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 16:10:46.923  INFO 27128 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 16:10:47.913  INFO 27128 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:10:48.865  INFO 27128 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:10:49.026  WARN 27128 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 16:10:49.065  INFO 27128 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 16:10:49.269  INFO 27128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 16:10:49.272  INFO 27128 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 7.546 seconds (JVM running for 9.098)
+2020-05-23 16:10:57.228  INFO 27128 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 16:10:57.228  INFO 27128 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 16:10:57.237  INFO 27128 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-05-23 16:10:57.273  INFO 27128 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@5da9a9ad'}
+2020-05-23 16:10:57.277  INFO 27128 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 16:10:59.716  INFO 27128 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@2cfe152b'}
+2020-05-23 16:10:59.745  INFO 27128 --- [http-nio-8081-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 16:10:59.888  INFO 27128 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 16:11:01.164  INFO 27128 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@4c3f3178'}
+2020-05-23 16:11:01.230  INFO 27128 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:12:35.209  INFO 12428 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 12428 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 16:12:35.213 DEBUG 12428 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 16:12:35.213  INFO 12428 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 16:12:36.166  INFO 12428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 16:12:36.250  INFO 12428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 4 repository interfaces.
+2020-05-23 16:12:36.576  INFO 12428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e4d1dcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 16:12:36.950  INFO 12428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 16:12:36.969  INFO 12428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 16:12:36.969  INFO 12428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 16:12:37.063  INFO 12428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 16:12:37.064  INFO 12428 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1793 ms
+2020-05-23 16:12:37.210  INFO 12428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 16:12:37.380  INFO 12428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 16:12:37.421  INFO 12428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 16:12:37.474  INFO 12428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 16:12:37.475  INFO 12428 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 16:12:37.576  INFO 12428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 16:12:37.700  INFO 12428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 16:12:38.470  INFO 12428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:12:39.732  INFO 12428 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:12:39.861  WARN 12428 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 16:12:39.892  INFO 12428 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 16:12:40.049  INFO 12428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 16:12:40.051  INFO 12428 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 5.314 seconds (JVM running for 6.318)
+2020-05-23 16:13:03.858  INFO 4736 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 4736 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 16:13:03.861 DEBUG 4736 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 16:13:03.861  INFO 4736 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 16:13:04.910  INFO 4736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 16:13:04.997  INFO 4736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 4 repository interfaces.
+2020-05-23 16:13:05.385  INFO 4736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6c0f750] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 16:13:05.794  INFO 4736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 16:13:05.814  INFO 4736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 16:13:05.814  INFO 4736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 16:13:05.908  INFO 4736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 16:13:05.908  INFO 4736 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1997 ms
+2020-05-23 16:13:06.056  INFO 4736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 16:13:06.215  INFO 4736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 16:13:06.255  INFO 4736 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 16:13:06.309  INFO 4736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 16:13:06.310  INFO 4736 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 16:13:06.411  INFO 4736 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 16:13:06.537  INFO 4736 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 16:13:07.282  INFO 4736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:13:07.985  INFO 4736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:13:08.106  WARN 4736 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 16:13:08.135  INFO 4736 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 16:13:08.267  INFO 4736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 16:13:08.268  INFO 4736 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 4.903 seconds (JVM running for 5.838)
+2020-05-23 16:13:13.547  INFO 4736 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 16:13:13.547  INFO 4736 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 16:13:13.557  INFO 4736 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-05-23 16:13:13.586  INFO 4736 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@1778e9b5'}
+2020-05-23 16:13:13.588  INFO 4736 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 16:13:15.597  INFO 4736 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@3a43d2df'}
+2020-05-23 16:13:15.615  INFO 4736 --- [http-nio-8081-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 16:13:15.708  INFO 4736 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 16:13:17.029  INFO 4736 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@27e1dd71'}
+2020-05-23 16:13:17.072  INFO 4736 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:13:18.359  INFO 4736 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/5/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.getEdit', args='[Ljava.lang.Object;@6acce426'}
+2020-05-23 16:13:18.388  INFO 4736 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:13:29.887  INFO 4736 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/4/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.getEdit', args='[Ljava.lang.Object;@3bd2a6d1'}
+2020-05-23 16:13:29.895  INFO 4736 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:19:02.031  INFO 4736 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.saveBlogs', args='[Ljava.lang.Object;@522edeb7'}
+2020-05-23 16:19:02.082  INFO 4736 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:redirect:/admin/blogs
+2020-05-23 16:19:02.096  INFO 4736 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@48fcffb4'}
+2020-05-23 16:19:02.102  INFO 4736 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:19:04.583  INFO 4736 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/4/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.getEdit', args='[Ljava.lang.Object;@7e8797ef'}
+2020-05-23 16:19:04.592  INFO 4736 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:19:11.789  INFO 4736 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.saveBlogs', args='[Ljava.lang.Object;@6cdc33d7'}
+2020-05-23 16:19:11.803  INFO 4736 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : Result:redirect:/admin/blogs
+2020-05-23 16:19:11.809  INFO 4736 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@6df47ced'}
+2020-05-23 16:19:11.815  INFO 4736 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:19:13.198  INFO 4736 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/4/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.getEdit', args='[Ljava.lang.Object;@522fa0a3'}
+2020-05-23 16:19:13.206  INFO 4736 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:28:19.855  INFO 7036 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 7036 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 16:28:19.861 DEBUG 7036 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 16:28:19.861  INFO 7036 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 16:28:20.792  INFO 7036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 16:28:20.888  INFO 7036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85ms. Found 4 repository interfaces.
+2020-05-23 16:28:21.337  INFO 7036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a93a5308] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 16:28:21.815  INFO 7036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 16:28:21.842  INFO 7036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 16:28:21.842  INFO 7036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 16:28:21.963  INFO 7036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 16:28:21.964  INFO 7036 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2038 ms
+2020-05-23 16:28:22.184  INFO 7036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 16:28:22.423  INFO 7036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 16:28:22.483  INFO 7036 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 16:28:22.560  INFO 7036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 16:28:22.562  INFO 7036 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 16:28:22.718  INFO 7036 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 16:28:22.885  INFO 7036 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 16:28:23.865  INFO 7036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:28:24.776  INFO 7036 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:28:24.920  WARN 7036 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 16:28:24.957  INFO 7036 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 16:28:25.123  INFO 7036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 16:28:25.125  INFO 7036 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 6.029 seconds (JVM running for 8.376)
+2020-05-23 16:28:36.059  INFO 7036 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 16:28:36.060  INFO 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 16:28:36.068  INFO 7036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-05-23 16:28:36.103  INFO 7036 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@6adb66e9'}
+2020-05-23 16:28:36.105  INFO 7036 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 16:28:38.946  INFO 7036 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@5b7accda'}
+2020-05-23 16:28:38.970  INFO 7036 --- [http-nio-8081-exec-4] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 16:28:39.098  INFO 7036 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 16:28:40.433  INFO 7036 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@5809b732'}
+2020-05-23 16:28:40.480  INFO 7036 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:28:43.160  INFO 7036 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/4/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.getEdit', args='[Ljava.lang.Object;@6a397574'}
+2020-05-23 16:28:43.182  INFO 7036 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:28:52.705  INFO 7036 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.saveBlogs', args='[Ljava.lang.Object;@3fcc7419'}
+2020-05-23 16:29:53.199  WARN 7036 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m673ms107?s800ns).
+2020-05-23 16:30:41.416  WARN 7036 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s217ms420?s500ns).
+2020-05-23 16:30:41.451  INFO 7036 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : Result:redirect:/admin/blogs
+2020-05-23 16:30:41.464  INFO 7036 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@19f6ba1e'}
+2020-05-23 16:30:41.478  INFO 7036 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:30:44.706  INFO 7036 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/4/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.getEdit', args='[Ljava.lang.Object;@6d3ea4fc'}
+2020-05-23 16:30:44.715  INFO 7036 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:33:56.981  INFO 7036 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:33:56.982  INFO 7036 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:33:56.984  INFO 7036 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-23 16:33:56.988  INFO 7036 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-23 16:34:02.460  INFO 28648 --- [main] com.cn.blog.BlogApplication              : Starting BlogApplication on LAPTOP-909J1U9B with PID 28648 (E:\Workspaces\blog\target\classes started by qbtba in E:\Workspaces\blog)
+2020-05-23 16:34:02.466 DEBUG 28648 --- [main] com.cn.blog.BlogApplication              : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-05-23 16:34:02.466  INFO 28648 --- [main] com.cn.blog.BlogApplication              : The following profiles are active: dev
+2020-05-23 16:34:03.419  INFO 28648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-23 16:34:03.513  INFO 28648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79ms. Found 4 repository interfaces.
+2020-05-23 16:34:03.897  INFO 28648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee661c47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-23 16:34:04.307  INFO 28648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-23 16:34:04.329  INFO 28648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-23 16:34:04.329  INFO 28648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-05-23 16:34:04.435  INFO 28648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-23 16:34:04.435  INFO 28648 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1915 ms
+2020-05-23 16:34:04.582  INFO 28648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-23 16:34:04.746  INFO 28648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-23 16:34:04.785  INFO 28648 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-23 16:34:04.835  INFO 28648 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-23 16:34:04.836  INFO 28648 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-23 16:34:04.938  INFO 28648 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-23 16:34:05.072  INFO 28648 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-23 16:34:05.870  INFO 28648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-23 16:34:06.614  INFO 28648 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-23 16:34:06.754  WARN 28648 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-23 16:34:06.786  INFO 28648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-23 16:34:06.953  INFO 28648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-23 16:34:06.954  INFO 28648 --- [main] com.cn.blog.BlogApplication              : Started BlogApplication in 4.978 seconds (JVM running for 5.946)
+2020-05-23 16:35:58.771  INFO 28648 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-23 16:35:58.771  INFO 28648 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-23 16:35:58.785  INFO 28648 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-05-23 16:35:58.816  INFO 28648 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.loginPage', args='[Ljava.lang.Object;@2be832aa'}
+2020-05-23 16:35:58.818  INFO 28648 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/login
+2020-05-23 16:36:01.272  INFO 28648 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/login', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.AdminController.login', args='[Ljava.lang.Object;@1d2adc46'}
+2020-05-23 16:36:01.291  INFO 28648 --- [http-nio-8081-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-23 16:36:01.381  INFO 28648 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/index
+2020-05-23 16:36:02.780  INFO 28648 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@6cf543b1'}
+2020-05-23 16:36:02.820  INFO 28648 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:36:06.683  INFO 28648 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/5/delete', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.delete', args='[Ljava.lang.Object;@741d3f47'}
+2020-05-23 16:36:06.712  INFO 28648 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : Result:redirect:/admin/blogs
+2020-05-23 16:36:06.726  INFO 28648 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@25667379'}
+2020-05-23 16:36:06.731  INFO 28648 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:36:10.795  INFO 28648 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/4/delete', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.delete', args='[Ljava.lang.Object;@3f4df4ef'}
+2020-05-23 16:36:10.802  INFO 28648 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : Result:redirect:/admin/blogs
+2020-05-23 16:36:10.808  INFO 28648 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@464b11e9'}
+2020-05-23 16:36:10.823  INFO 28648 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:38:03.201  INFO 28648 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@2a5a5f6f'}
+2020-05-23 16:38:03.208  INFO 28648 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:38:07.575  INFO 28648 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : request:{url='/admin/types', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TypeController.types', args='[Ljava.lang.Object;@780837f3'}
+2020-05-23 16:38:07.582  INFO 28648 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : Result:admin/types
+2020-05-23 16:38:08.589  INFO 28648 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@5cb3b4e7'}
+2020-05-23 16:38:08.596  INFO 28648 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:38:09.671  INFO 28648 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/tags', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TagController.tags', args='[Ljava.lang.Object;@60a5c129'}
+2020-05-23 16:38:09.677  INFO 28648 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/tags
+2020-05-23 16:38:10.311  INFO 28648 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : request:{url='/admin/types', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TypeController.types', args='[Ljava.lang.Object;@40156cc5'}
+2020-05-23 16:38:10.313  INFO 28648 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : Result:admin/types
+2020-05-23 16:38:11.160  INFO 28648 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@2ac0b3bb'}
+2020-05-23 16:38:11.164  INFO 28648 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:38:14.001  INFO 28648 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.input', args='[Ljava.lang.Object;@28bffbe4'}
+2020-05-23 16:38:14.007  INFO 28648 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:38:15.754  INFO 28648 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : request:{url='/admin/types', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TypeController.types', args='[Ljava.lang.Object;@30f81237'}
+2020-05-23 16:38:15.756  INFO 28648 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : Result:admin/types
+2020-05-23 16:38:16.754  INFO 28648 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : request:{url='/admin/types/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TypeController.input', args='[Ljava.lang.Object;@689b23ab'}
+2020-05-23 16:38:16.754  INFO 28648 --- [http-nio-8081-exec-8] com.cn.blog.handle.LogAspect             : Result:admin/types-input
+2020-05-23 16:38:18.549  INFO 28648 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : request:{url='/admin/tags', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TagController.tags', args='[Ljava.lang.Object;@456af79e'}
+2020-05-23 16:38:18.552  INFO 28648 --- [http-nio-8081-exec-9] com.cn.blog.handle.LogAspect             : Result:admin/tags
+2020-05-23 16:38:19.828  INFO 28648 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : request:{url='/admin/tags/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TagController.input', args='[Ljava.lang.Object;@3c90de3d'}
+2020-05-23 16:38:19.828  INFO 28648 --- [http-nio-8081-exec-10] com.cn.blog.handle.LogAspect             : Result:admin/tags-input
+2020-05-23 16:38:26.957  INFO 28648 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@5b26b678'}
+2020-05-23 16:38:26.964  INFO 28648 --- [http-nio-8081-exec-1] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:38:28.568  INFO 28648 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/1/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.getEdit', args='[Ljava.lang.Object;@1653b6b'}
+2020-05-23 16:38:28.583  INFO 28648 --- [http-nio-8081-exec-2] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
+2020-05-23 16:38:31.757  INFO 28648 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : request:{url='/admin/types', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TypeController.types', args='[Ljava.lang.Object;@74beb39e'}
+2020-05-23 16:38:31.760  INFO 28648 --- [http-nio-8081-exec-3] com.cn.blog.handle.LogAspect             : Result:admin/types
+2020-05-23 16:38:33.009  INFO 28648 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@1565b423'}
+2020-05-23 16:38:33.015  INFO 28648 --- [http-nio-8081-exec-6] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:38:33.694  INFO 28648 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : request:{url='/admin/tags', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.TagController.tags', args='[Ljava.lang.Object;@1575185'}
+2020-05-23 16:38:33.697  INFO 28648 --- [http-nio-8081-exec-5] com.cn.blog.handle.LogAspect             : Result:admin/tags
+2020-05-23 16:38:36.033  INFO 28648 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.ListBlogs', args='[Ljava.lang.Object;@71155541'}
+2020-05-23 16:38:36.040  INFO 28648 --- [http-nio-8081-exec-4] com.cn.blog.handle.LogAspect             : Result:admin/blogs
+2020-05-23 16:38:42.456  INFO 28648 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : request:{url='/admin/blogs/input', ip='0:0:0:0:0:0:0:1', method='com.cn.blog.controller.BlogController.input', args='[Ljava.lang.Object;@7bbeb96f'}
+2020-05-23 16:38:42.458  INFO 28648 --- [http-nio-8081-exec-7] com.cn.blog.handle.LogAspect             : Result:admin/blogs-input
